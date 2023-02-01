@@ -23,7 +23,7 @@ SOFTWARE.
 This Code is based on DarkDump written by Josh Schiavone.
 '''
 # API needs optimising
-# output to JSON or html
+# output to JSON or html or TXT; format
 
 import sys
 sys.dont_write_bytecode = True
