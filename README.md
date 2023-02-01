@@ -1,4 +1,4 @@
-## About darkdig (Recent Notice - 02/01/23)
+## About darkdig 
 darkdig is a simple script written in Python3.11 in which it allows users to enter a search term (query) in the command line and darkdig will pull all the deep web onion sites relating to that query.
 
 ## Installation
