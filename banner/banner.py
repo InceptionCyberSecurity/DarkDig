@@ -4,16 +4,17 @@ class Banner(object):
         try:
             from termcolor import cprint, colored
             banner = '''
-     ____          _     _               
-    |    \ ___ ___| |_ _| |_ _ _____ ___ 
-    |  |  | .'|  _| '_| . | | |     | . |
-    |____/|__,|_| |_,_|___|___|_|_|_|  _|
-                                    |_|  
-        Developed By: Josh Schiavone
-        https://github.com/josh0xA  
-            joshschiavone.com 
-              Version: 2.0
-              '''
+
+          ___           _   ___  _
+         |   \ __ _ _ _| |_|   \(_)__ _
+         | |) / _` | '_| / / |) | / _` |
+         |___/\__,_|_| |_\_\___/|_\__, |
+                          |___/
+
+          Developed By: Josh Schiavone & Nat Jones
+https://github.com/josh0xA and https://github.com/ArcadeusOPS/DarkDig
+                       Version: 2.1
+                          '''
 
             cprint(banner, 'magenta', attrs=['bold'])
 

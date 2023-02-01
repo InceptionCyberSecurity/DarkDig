@@ -1,4 +1,4 @@
-# Darkdump2 - Search The Deep Web Straight From Your Terminal
+# DarkDig2.1 - Deep Web Search via Terminal
 <p align="center">
   <img src="https://github.com/josh0xA/darkdump/blob/main/imgs/ddumplogo.png?raw=true"</img>
   <br><br>
@@ -14,16 +14,16 @@ Darkdump is a simple script written in Python3.11 in which it allows users to en
 2) ``cd darkdump``<br/>
 3) ``python3 -m pip install -r requirements.txt``<br/>
 4) ``python3 darkdump.py --help``<br/>
-## Usage 
+## Usage
 Example 1: ``python3 darkdump.py --query programming``<br/>
 Example 2: ``python3 darkdump.py --query="chat rooms"``<br/>
 Example 3: ``python3 darkdump.py --query hackers --amount 12``<br/>
 
  - Note: The 'amount' argument filters the number of results outputted<br/>
-  
-### Usage With Increased Anonymity 
+
+### Usage With Increased Anonymity
 Darkdump Proxy: ``python3 darkdump.py --query bitcoin -p``<br/>
-  
+
 ## Menu
 ```
 
@@ -56,8 +56,8 @@ options:
 </p>
 
 ## Ethical Notice
-The developer of this program, Josh Schiavone, is not resposible for misuse of this data gathering tool. Do not use darkdump to navigate websites that take part in any activity that is identified as illegal under the laws and regulations of your government. May God bless you all. 
+The original developer of this program, Josh Schiavone, is not resposible for misuse of this data gathering tool. Do not use darkdump to navigate websites that take part in any activity that is identified as illegal under the laws and regulations of your government. May God bless you all. 
 
-## License 
+## License
 MIT License<br/>
 Copyright (c) Josh Schiavone

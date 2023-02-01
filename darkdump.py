@@ -1,6 +1,6 @@
 '''
 MIT License
-Copyright (c) 2023 Josh Schiavone
+Copyright (c) 2023 ArcadeusOPS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,15 +19,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+This Code is based on DarkDump written by Josh Schiavone.
 '''
+# API needs optimising
 
-# Please note, this code sucks. I had to update it to a new API with limited time, so I just threw it together. 
-
-import sys 
+import sys
 sys.dont_write_bytecode = True
 
-__author__ = 'Josh Schiavone'
-__version__ = '2.0'
+__author__ = 'NAthan jones'
+__version__ = '2.1'
 __license__ = 'MIT'
 
 import requests
@@ -41,10 +42,10 @@ from headers.agents import Headers
 from banner.banner import Banner
 
 notice = '''
-Note: 
-    This tool is not to be used for illegal purposes.
-    The author is not responsible for any misuse of Darkdump.
-    May God bless you all. 
+Note:
+    This tool is for Ethical Hacking Purposes. Stay Legal.
+    The author is not responsible for any misuse of DarkDig.
+    Stop The Rot!
 '''
 
 class Colors:
@@ -119,7 +120,7 @@ class Proxies(object):
                     proxy = line.split(':')
                     self.proxy["http"] = "http://" + proxy[0] + ':' + proxy[1]
         else: pass
-    
+
     def get_proxy(self):
         return self.proxy["http"]
 
@@ -127,7 +128,7 @@ class Proxies(object):
         return self.proxy
 
 class Darkdump(object):
-    def crawl(self, query, amount):      
+    def crawl(self, query, amount):
         clr = Colors()
         prox = Proxies()
 
@@ -137,8 +138,8 @@ class Darkdump(object):
             proxy = prox.get_proxy()
             print(clr.BOLD + clr.P + "~:~ Using Proxy: " + clr.C + proxy + clr.END + '\n')
             page = requests.get(Configuration.__darkdump_api__ + query, proxies=prox.get_proxy_dict())
-        else: 
-            page = requests.get(Configuration.__darkdump_api__ + query) 
+        else:
+            page = requests.get(Configuration.__darkdump_api__ + query)
         page.headers = headers
 
         soup = BeautifulSoup(page.content, 'html.parser')
@@ -157,7 +158,7 @@ class Darkdump(object):
                 for iterator in range(amount):
                     site_url = Configuration.urls[iterator]
                     site_description = Configuration.descriptions[iterator]
-                    print(clr.BOLD + clr.G + f"[+] Website: {site_description}\n\t> Onion Link: {clr.R}{site_url}\n" + 
+                    print(clr.BOLD + clr.G + f"[+] Website: {site_description}\n\t> Onion Link: {clr.R}{site_url}\n" +
                         clr.END)
             else:
                 print(clr.BOLD + clr.R + "[!] No results found." + clr.END)
@@ -167,7 +168,7 @@ class Darkdump(object):
 def darkdump_main():
     clr = Colors()
     cfg = Configuration()
-    bn = Banner() 
+    bn = Banner()
     prox = Proxies()
 
     Platform(True).clean_screen()
@@ -201,8 +202,8 @@ def darkdump_main():
 
     if args.version:
         print(clr.BOLD + clr.B + f"Darkdump Version: {__version__}\n" + clr.END)
-    
-    if args.proxy: 
+
+    if args.proxy:
         Configuration.DARKDUMP_PROXY = True
 
     if args.query and args.amount:
@@ -218,4 +219,3 @@ def darkdump_main():
 
 if __name__ == "__main__":
     darkdump_main()
-
