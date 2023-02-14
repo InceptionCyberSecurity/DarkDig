@@ -1,4 +1,4 @@
-## About darkdig 
+## About darkdig
 darkdig is a simple script written in Python3.11 in which it allows users to enter a search term (query) in the command line and darkdig will pull all the deep web onion sites relating to that query.
 
 ## Installation
@@ -33,7 +33,7 @@ options:
 ```
 
 ## Ethical Notice
-The original developer of this program, Josh Schiavone, nor ArcadeusOPS, are not responsible for misuse of this data gathering tool. Do not use darkdump/darkdig to navigate websites that take part in any activity that is identified as illegal under the laws and regulations of your government.
+The original developer of this program, Josh Schiavone, nor ArcadeusOPS, are not responsible for misuse of this data gathering tool. Do not use darkdump/darkdig to navigate websites that take part in any activity that is identified as illegal under the laws and regulations of your government. STAY LEGAL !!
 
 ## License
 MIT License<br/>
