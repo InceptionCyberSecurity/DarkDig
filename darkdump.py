@@ -179,7 +179,7 @@ def DARKDIG_main():
     print(notice)
     time.sleep(1.3)
     # Set up argument parser
-    parser = argparse.ArgumentParser(description="DARKDIG is a tool for searching the deep web for specific keywords. Made by yours truly.")
+    parser = argparse.ArgumentParser(description="DARKDIG is a tool for searching the deep web for specific keywords.")
     parser.add_argument("-v",
                         "--version",
                         help="returns DARKDIG's version",
@@ -220,3 +220,4 @@ def DARKDIG_main():
 
 if __name__ == "__main__":
     DARKDIG_main()
+# save as XML then convert to HTML; email to user defined address
