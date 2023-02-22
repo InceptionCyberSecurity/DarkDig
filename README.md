@@ -1,5 +1,5 @@
 ## About darkdig
-darkdig is a simple script written in Python3.11 in which it allows users to enter a search term (query) in the command line and darkdig will pull all the deep web onion sites relating to that query. Based on DarkDump by Josh Schiavone, additions include output to file (XML), then conversion to HTML.
+darkdig is a simple script written in Python3.11 in which it allows users to enter a search term (query) in the command line and darkdig will pull all the deep web onion sites relating to that query. Added to by Nathan Jones nathan.jones@arcadeusops.com. Based on DarkDump by Josh Schiavone, additions include output to file (XML), then conversion to HTML.
 
 ## Installation
 1) ``git clone https://github.com/ArcadeusOPS/DarkDig.git``<br/>
