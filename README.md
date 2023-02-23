@@ -6,6 +6,7 @@ darkdig is a simple script written in Python3.11 in which it allows users to ent
 2) ``cd darkdig``<br/>
 3) ``python3 -m pip install -r requirements.txt``<br/>
 4) ``python3 darkdig.py --help``<br/>
+
 ## Usage
 Example 1: ``python3 darkdig.py --query programming``<br/>
 Example 2: ``python3 darkdig.py --query="chat rooms"``<br/>
@@ -18,7 +19,6 @@ darkdig Proxy: ``python3 darkdig.py --query bitcoin -p``<br/>
 
 ## Menu
 ```
-
 usage: darkdig.py [-h] [-v] [-q QUERY] [-a AMOUNT] [-p]
 
 options:
@@ -29,7 +29,6 @@ options:
   -a AMOUNT, --amount AMOUNT
                         the amount of results you want to retrieve (default: 10)
   -p, --proxy           use darkdig proxy to increase anonymity
-
 ```
 
 ## Ethical Notice
