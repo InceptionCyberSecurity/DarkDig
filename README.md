@@ -37,3 +37,6 @@ The original DarkDump code written by, Josh Schiavone, nor ArcadeusOPS, are not 
 ## License
 MIT License<br/>
 Copyright (c) Josh Schiavone and ArcadeusOPS
+
+# Bugs
+Send issues to info@arcadeusops.com stating nature of issue. A screenshot will help too. Thanks.
