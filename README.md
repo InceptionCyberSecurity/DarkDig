@@ -40,3 +40,6 @@ Copyright (c) Josh Schiavone and ArcadeusOPS
 
 # Bugs
 Send issues to info@arcadeusops.com stating nature of issue. A screenshot will help too. Thanks.
+
+# CPD
+Part of EC-Council ECE/CPD Credits
