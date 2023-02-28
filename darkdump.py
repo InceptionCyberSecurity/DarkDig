@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # MIT License
 # This Code is based on DarkDump written by Josh Schiavone.
 # API needs optimising
