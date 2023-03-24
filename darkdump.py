@@ -203,10 +203,8 @@ def DARKDIG_main():
 if __name__ == "__main__":
     DARKDIG_main()
 
-
 # save as XML then convert to HTML
 document.pdf
-
 
 # email to user defined address
 subject = "Dark Web Scraping Results"
